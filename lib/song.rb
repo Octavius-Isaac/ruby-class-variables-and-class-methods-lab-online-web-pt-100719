@@ -13,20 +13,19 @@ class Song
     @genre = genre
     @@artists << artist
     @@genres << genre
-    end
   end 
   
    def self.count
     @@count 
-  end 
+   end 
   
   def self.artists
     @@artists.uniq
     end 
  
- def self.genres
-   @@genres.uniq
- end
+  def self.genres
+    @@genres.uniq
+  end
  
   def self.genre_count
     genre_count = Hash.new(0)
@@ -39,6 +38,5 @@ class Song
     @@artists.each {|artist| artist_count[artist] += 1}
     artist_count
   end
-  
   
 end
