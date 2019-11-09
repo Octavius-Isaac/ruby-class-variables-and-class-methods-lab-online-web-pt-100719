@@ -11,7 +11,7 @@ class Song
   end 
   
   def name 
-    song_name = 
+    name = :name 
   end 
   
   
